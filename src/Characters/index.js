@@ -1,16 +1,24 @@
+import "./style.css"
 
 function Characters ({students}){
 
     return (
-        <div>
-        <div>
-        <img src={students.image} alt="alt" />
-        <h1> {students.name}</h1>
-        <h2>{students.house}</h2>
-        <h3> {students.species}</h3>
+        <div className="characteres">
+        { students.map((character) => (
+            <div className="personagem">
+            <img src={character.image} alt="alt"/>
+            <h3> {character.name}</h3>
+            <h4>{character.house}</h4>
+            <h4> {character.species}</h4>
         </div>
+        ))}
         </div>
     )
 }
 
 export default Characters;
+
+
+// {products.map((item, index) => (
+//     <Product key={index} showProducts={showProducts}  handleClick={handleClick} id={item.id} name={item.name} price={item.price} category={item.category} img={item.img}/>
+// ))}

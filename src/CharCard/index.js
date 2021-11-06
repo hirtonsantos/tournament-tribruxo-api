@@ -32,19 +32,14 @@ function CharCard ({setStudents, characterList, students}){
         }
     }
 
-    function teste (){
-        setPerso1(students[0])
-        setPerso2(students[1])
-        setPerso3(students[2])
-    }
-
     return (
-        <div className="card">
-            <Characters students={perso1}/>
-            <Characters students={perso2}/>
-            <Characters students={perso3}/>
-            <button onClick={teste}> TESTA AQUI RAPIDAO</button>
-            <button onClick={random}>CLIQUE AQUI</button>
+        <div className="mae">
+            <div className="card">
+                <Characters students={students}/>
+            </div>
+            <div>
+                <button onClick={random}>CLIQUE AQUI</button>
+            </div>
         </div>
     )
 }

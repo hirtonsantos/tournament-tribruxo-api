@@ -13,15 +13,10 @@ function App() {
     .catch((err) => console(err))
   }, []);  
 
-
-
-
   return (
     <div className="App">
       <header className="App-header">
-      {/* <img src={students.image} alt="ola"/> */}
-      {/* <button onClick={random}>CLIQUE AQUI</button> */}
-      <CharCard setStudents={setStudents} characterList={characterList} students={students}/>
+      <CharCard characterList={characterList} setStudents={setStudents} students={students}/>
       </header>
     </div>
   );
