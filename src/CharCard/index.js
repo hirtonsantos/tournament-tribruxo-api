@@ -4,10 +4,6 @@ import Characters from "../Characters"
 
 function CharCard ({setStudents, characterList, students}){
 
-    const [perso1, setPerso1] = useState([])
-    const [perso2, setPerso2] = useState([])
-    const [perso3, setPerso3] = useState([])
-
     function random (){
         const elementos = characterList.filter((obj) => obj.image !== "")
         let p1 = elementos[Math.floor(Math.random() * elementos.length)]
