@@ -1,5 +1,4 @@
 import "./style.css"
-import { useState } from "react"
 import Characters from "../Characters"
 
 function CharCard ({setStudents, characterList, students}){
