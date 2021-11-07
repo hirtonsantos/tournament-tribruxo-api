@@ -1,9 +1,10 @@
 import "./style.css"
 import Characters from "../Characters"
 
-function CharCard ({setStudents, characterList, students}){
+function CharCard ({setStudents, characterList, students, pagePrivate, setPagePrivate}){
 
     function random (){
+        setPagePrivate(false)
         const elementos = characterList.filter((obj) => obj.image !== "")
         let p1 = elementos[Math.floor(Math.random() * elementos.length)]
         let p2 = elementos[Math.floor(Math.random() * elementos.length)]
@@ -26,13 +27,22 @@ function CharCard ({setStudents, characterList, students}){
         }
     }
 
-    return (
+    return pagePrivate ? (
         <div className="mae">
             <div className="card">
-                <Characters students={students}/>
+                <Characters students={students} pagePrivate={pagePrivate} setPagePrivate={setPagePrivate}/>
             </div>
             <div>
-                <button onClick={random}>CLIQUE AQUI</button>
+                <button onClick={random}> Clique aqui </button>
+            </div>
+        </div>
+        ):(
+        <div className="mae">
+            <div className="card">
+                <Characters students={students} pagePrivate={pagePrivate} setPagePrivate={setPagePrivate}/>
+            </div>
+            <div>
+                <button onClick={random}> Encontre os feiticeiros </button>
             </div>
         </div>
     )

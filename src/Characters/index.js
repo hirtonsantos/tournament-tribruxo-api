@@ -1,8 +1,16 @@
 import "./style.css"
 
-function Characters ({students}){
+function Characters ({students, setPagePrivate, pagePrivate}){
 
-    return (
+    return pagePrivate ? (
+        <div>
+        <p>
+            Os bruxos de Hogwarts estão ansiosos para as Preparatórias do Torneio Tribruxo. 
+            Três alunos serão escolhidos para representar as suas escolas. 
+            Quais alunos serão escolhidos?
+        </p> 
+        </div>
+        ):(
         <div className="characteres">
         { students.map((character) => (
             <div className="personagem">

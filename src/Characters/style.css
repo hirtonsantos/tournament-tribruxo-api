@@ -1,4 +1,16 @@
+/* PAGINA DE AVISO */
 
+p{
+    color: aliceblue;
+    width: 550px;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+
+/* PAGE DOS ALUNOS ESCOLHIDOS... */
 .personagem{
     text-align: center;
     display: flex;

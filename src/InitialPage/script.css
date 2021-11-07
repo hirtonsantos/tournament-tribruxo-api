@@ -1,0 +1,12 @@
+
+.first-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 120px;
+}
+
+.first-page h1, h2 {
+    padding-bottom: 40px;
+    color: aliceblue;
+}
