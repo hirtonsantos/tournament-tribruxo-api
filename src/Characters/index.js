@@ -17,8 +17,3 @@ function Characters ({students}){
 }
 
 export default Characters;
-
-
-// {products.map((item, index) => (
-//     <Product key={index} showProducts={showProducts}  handleClick={handleClick} id={item.id} name={item.name} price={item.price} category={item.category} img={item.img}/>
-// ))}

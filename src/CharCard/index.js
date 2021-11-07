@@ -8,21 +8,20 @@ function CharCard ({setStudents, characterList, students}){
         let p1 = elementos[Math.floor(Math.random() * elementos.length)]
         let p2 = elementos[Math.floor(Math.random() * elementos.length)]
         let p3 = elementos[Math.floor(Math.random() * elementos.length)]
-        if (p2 !== p1){
-            if (p3 !== p1 && p2){
-                setStudents([p1, p2, p3])
-            } else {
-                p3 = elementos[Math.floor(Math.random() * elementos.length+1)]
-                setStudents([p1, p2, p3])
-            }
+        if (p1.house !== p2.house){
+            const newP3 = elementos.filter (item => item.house !== p1.house && item.house !== p2.house);
+            console.log(newP3[0])
+            setStudents([p1,p2,newP3[0]])
         } 
-        else {
-            p2 = elementos[Math.floor(Math.random() * elementos.length+1)]
-            if (p3 !== p1 && p2){
-                setStudents([p1, p2, p3])
-            } else {
-                p3 = elementos[Math.floor(Math.random() * elementos.length+2)]
-                setStudents([p1, p2, p3])
+        else if (p1.house === p2.house) {
+            const newP2 = elementos.filter (item => item.house !== p1.house);
+            if ((p3.house !== newP2[0].house) && (p3.house !== p1.house)){
+                setStudents([p1,newP2[0],p3])
+                console.log("if 2")
+            } else if (p3.house === newP2[0].house) {
+                const newP3 = elementos.filter (item => item.house !== newP2[0].house && item.house !== p1.house);
+                setStudents([p1, newP2[0], newP3[0]])
+                console.log("else 2")
             }
         }
     }
