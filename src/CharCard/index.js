@@ -32,7 +32,7 @@ function CharCard ({setStudents, characterList, students, pagePrivate, setPagePr
             <div className="card">
                 <Characters students={students} pagePrivate={pagePrivate} setPagePrivate={setPagePrivate}/>
             </div>
-            <div>
+            <div className="div-button">
                 <button onClick={random}> Clique aqui </button>
             </div>
         </div>

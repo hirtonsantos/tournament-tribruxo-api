@@ -39,11 +39,13 @@ h3, h4 {
 @media screen and (max-width:900px) {
     .personagem{
         margin: 0px;
-        width: 30%;
+        width: 70%;
     }   
     .characteres{
         justify-content: space-evenly;
+        align-items: center;
         width: 100%;
+        flex-direction: column;
     }
     
     button{
