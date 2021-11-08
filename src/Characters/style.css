@@ -2,7 +2,7 @@
 
 p{
     color: aliceblue;
-    width: 550px;
+    /* width: 550px; */
     font-size: x-large;
     text-align: center;
     padding-top: 120px;
@@ -29,8 +29,55 @@ img {
 .characteres{ 
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 h3, h4 {
     color: antiquewhite;
+}
+
+@media screen and (max-width:900px) {
+    .personagem{
+        margin: 0px;
+        width: 30%;
+    }   
+    .characteres{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    
+    button{
+        width: 100%;
+    }
+
+    .div-button{
+        width: 100%;
+        text-align: center;
+    }
+    
+    img {
+        Width: 100%;
+        Height: 200px;
+    }
+
+    .mae{
+        width: 100vw;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:900px){
+    .img{
+        Width: 210px;
+    }
+    .personagem {
+        margin: 0px;
+        align-items: center; 
+    }
+    .characteres {
+        justify-content: space-evenly;
+        width: 100%;
+    }
 }

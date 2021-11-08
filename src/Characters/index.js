@@ -3,7 +3,7 @@ import "./style.css"
 function Characters ({students, setPagePrivate, pagePrivate}){
 
     return pagePrivate ? (
-        <div>
+        <div className="paragrafo-page-two">
         <p>
             Os bruxos de Hogwarts estão ansiosos para as Preparatórias do Torneio Tribruxo. 
             Três alunos serão escolhidos para representar as suas escolas. 
