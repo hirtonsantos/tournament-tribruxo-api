@@ -4,7 +4,7 @@ My first project using Api Rest
 
 # About project:
 
-This is just a way to contextualize requests and responses between the user, the API and 
+This is just a way to contextualize requests and responses between the user, the API and    
 the application using Libs, Components, Props, projects deploys, JavaScript, states, UI / UX, API's.  
 
 # Technologies:
